@@ -7,6 +7,7 @@ export default class MovieRow extends React.Component {
   render() {
     return (
       <tr scope="row">
+        <td>{this.props.idx + 1}</td>
         <td>{this.props.movieObj.title}</td>
         <td>{this.props.movieObj.genre.name}</td>
         <td>{this.props.movieObj.numberInStock}</td>
